@@ -1,0 +1,55 @@
+void getGyro()
+{
+    printf("Getting Gyroscope Data: \n\n");
+    uint8_t buffer[6];
+    read_registers(GYRO_START_REG, buffer, 6);
+    printf("X-High: 0x%x  ", buffer[0]);
+    printf("X-Low: 0x%x\n", buffer[1]);
+    printf("X-High: %d  ", buffer[0]);
+    printf("X-Low: %d\n", buffer[1]);
+    uint16_t xAcceleration = buffer[0] << 8 | buffer[1];
+    printf("X Gyroscope: %x", xAcceleration);
+    printf("X Gyroscope: %d", xAcceleration);
+
+    printf("Y-High: %x  ", buffer[2]);
+    printf("Y-Low: %x\n", buffer[3]);
+    printf("Y-High: %d  ", buffer[2]);
+    printf("Y-Low: %d\n", buffer[3]);
+    uint16_t yAcceleration = buffer[2] << 8 | buffer[3];
+    printf("Y Gyroscope: %x", yAcceleration);
+    printf("Y Gyroscope: %d", yAcceleration);
+
+    printf("Z-High: %x  ", buffer[4]);
+    printf("Z-Low: %x\n", buffer[5]);
+    printf("Z-High: %d  ", buffer[4]);
+    printf("Z-Low: %d\n", buffer[5]);
+    uint16_t zAcceleration = buffer[4] << 8 | buffer[5];
+    printf("Z Gyroscope: %x", zAcceleration);
+    printf("Z Gyroscope: %d", zAcceleration);
+}
+
+
+
+    // printf("X-High: 0x%x  ", buffer[0]);
+    // printf("X-Low: 0x%x\n", buffer[1]);
+    // printf("X-High: %d  ", buffer[0]);
+    // printf("X-Low: %d\n", buffer[1]);
+    // uint16_t xAcceleration = (buffer[0] << 8) | buffer[1];
+    // printf("X Accelration: %x", xAcceleration);
+    // printf("X Accelration: %d", xAcceleration);
+
+    // printf("Y-High: %x  ", buffer[2]);
+    // printf("Y-Low: %x\n", buffer[3]);
+    // printf("Y-High: %d  ", buffer[2]);
+    // printf("Y-Low: %d\n", buffer[3]);
+    // uint16_t yAcceleration = (buffer[2] << 8) | buffer[3];
+    // printf("Y Accelration: %x", yAcceleration);
+    // printf("Y Accelration: %d", yAcceleration);
+
+    // printf("Z-High: %x  ", buffer[4]);
+    // printf("Z-Low: %x\n", buffer[5]);
+    // printf("Z-High: %d  ", buffer[4]);
+    // printf("Z-Low: %d\n", buffer[5]);
+    // uint16_t zAcceleration = (buffer[4] << 8) | buffer[5];
+    // printf("Z Accelration: %x", zAcceleration);
+    // printf("Z Accelration: %d", zAcceleration);

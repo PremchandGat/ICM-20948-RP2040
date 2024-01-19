@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${PICO_SDK_PATH}/**"
+                "${PICO_SDK_PATH}/**",
+                "/home/prem/pico/pico-sdk/src/rp2_common/hardware_i2c/include/**",
+                "/home/prem/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

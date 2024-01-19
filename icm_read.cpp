@@ -1,3 +1,9 @@
+/*
+    Written By Premchand Gat
+    Github: PremchandGat
+    Email: Premchandg278@gmail.com
+*/
+
 #include "pico/stdlib.h"
 #include "hardware/structs/spi.h"
 #include "hardware/regs/dreq.h"

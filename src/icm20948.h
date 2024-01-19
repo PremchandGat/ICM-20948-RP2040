@@ -1,3 +1,9 @@
+/*
+    Written By Premchand Gat
+    Github: PremchandGat
+    Email: Premchandg278@gmail.com
+*/
+
 #pragma once
 #include <stdio.h>
 #include "hardware/spi.h"

@@ -1,3 +1,9 @@
+/*
+    Written By Premchand Gat
+    Github: PremchandGat
+    Email: Premchandg278@gmail.com
+*/
+
 #include "icm20948.h"
 
 /*  0x80 in Binary is 10000000
